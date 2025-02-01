@@ -18,6 +18,7 @@
 		"aicommits": "./dist/cli.mjs",
 		"aic": "./dist/cli.mjs"
 	},
+	
 	"scripts": {
 		"build": "pkgroll --minify",
 		"prepack": "npm run build && clean-pkg-json",

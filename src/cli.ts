@@ -1,5 +1,6 @@
 import { cli } from 'cleye';
-import { description, version } from '../package.json';
+import pkg from '../package.json' assert { type: 'json' };
+const { description, version } = pkg;
 import aicommits from './commands/aicommits.js';
 import prepareCommitMessageHook from './commands/prepare-commit-msg-hook.js';
 import configCommand from './commands/config.js';
@@ -64,6 +65,5 @@ cli(
 				rawArgv
 			);
 		}
-	},
-	rawArgv
+	}
 );

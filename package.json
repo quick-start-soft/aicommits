@@ -20,7 +20,7 @@
 	},
 	"scripts": {
 		"build": "pkgroll --minify",
-		"prepare": "npm run build && clean-pkg-json",
+		"prepack": "npm run build && clean-pkg-json",
 		"lint": "",
 		"type-check": "tsc",
 		"test": "tsx tests"

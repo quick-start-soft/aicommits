@@ -20,10 +20,10 @@
 	},
 	"scripts": {
 		"build": "pkgroll --minify",
+		"prepare": "npm run build && clean-pkg-json",
 		"lint": "",
 		"type-check": "tsc",
-		"test": "tsx tests",
-		"prepack": "pnpm build && clean-pkg-json"
+		"test": "tsx tests"
 	},
 	"dependencies": {
 		"@dqbd/tiktoken": "^1.0.2"

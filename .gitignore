@@ -20,7 +20,7 @@ lerna-debug.log*
 .env.test
 
 # Distribution
-# dist
+dist
 
 # Eslint cache
 .eslintcache

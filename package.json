@@ -1,6 +1,6 @@
 {
 	"name": "@quick-start-soft/aicommits",
-	"version": "0.0.0-semantic-release",
+	"version": "0.0.0",
 	"description": "Writes your git commit messages for you with AI",
 	"keywords": [
 		"ai",
@@ -18,7 +18,6 @@
 		"aicommits": "./dist/cli.mjs",
 		"aic": "./dist/cli.mjs"
 	},
-	
 	"scripts": {
 		"build": "pkgroll --minify",
 		"prepack": "npm run build && clean-pkg-json",

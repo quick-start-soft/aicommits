@@ -160,7 +160,7 @@ export const generateCommitMessage = async (
 				top_p: 1,
 				frequency_penalty: 0,
 				presence_penalty: 0,
-				max_tokens: 200,
+				...( /^o/.test(String(model)) ? { max_completion_tokens: 200 } : { max_tokens: 200 }),
 				stream: false,
 				n: completions,
 			},
